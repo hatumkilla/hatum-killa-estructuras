@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatum Killa Contratistas - Estructuras Metálicas</title>
+    <meta name="description" content="Especialistas en estructuras metálicas y obras civiles en Perú. Construcción de naves industriales, cerchas, carpintería metálica. Sede Chancay - Huari.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- FontAwesome Icons (Free CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="https://i.ibb.co/C5T5d4X7/logo-hk.png" alt="Hatum Killa Logo">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto" class="btn btn-primary btn-sm">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Soluciones Integrales en Estructuras Metálicas<br>y Obras Civiles</h1>
+                <p>Ingeniería, precisión y seguridad para materializar su proyecto.<br>Garantizamos excelencia operativa con cobertura a nivel nacional.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                    <a href="#servicios" class="btn btn-outline btn-outline-light">Nuestros Servicios</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Bar -->
+        <section class="trust-bar">
+            <div class="container trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <h3>Ingeniería a Medida</h3>
+                    <p>Diseño y cálculo estructural adaptado a las exigencias técnicas de cada industria.</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Cobertura Nacional</h3>
+                    <p>Operaciones estratégicas con sedes en Lima Provincias (Chancay) y Áncash (Huari).</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Garantía y Formalidad</h3>
+                    <p>Empresa 100% formal, con facturación electrónica y estricto cumplimiento normativo y tributario.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="nosotros" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Acerca de Nosotros</h2>
+                <p class="section-subtitle">Conozca a Hatum Killa Contratistas Generales E.I.R.L.</p>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Nuestra Filosofía</h3>
+                        <p>Somos una empresa peruana especializada en la ejecución integral de estructuras metálicas y obras civiles. Nuestro enfoque técnico se basa en la precisión ingenieril, el compromiso absoluto con la seguridad y la entrega de proyectos que superan los más altos estándares de calidad.</p>
+
+                        <h3>Nuestra Misión</h3>
+                        <p>Proveer soluciones de construcción y fabricación metálica que optimicen los recursos de nuestros clientes, garantizando integridad estructural y el cumplimiento riguroso de los plazos de entrega.</p>
+
+                        <h3>Nuestra Visión</h3>
+                        <p>Consolidarnos como el socio estratégico líder a nivel nacional en el diseño, fabricación y montaje de infraestructuras, destacando por nuestra innovación técnica y confiabilidad operativa.</p>
+                    </div>
+                    <!-- Galería lateral de trabajos reales -->
+                    <div class="about-gallery">
+                        <img src="https://i.ibb.co/9mWRRxBB/03-techo.jpg" alt="Instalación de cobertura metálica azul" class="about-gallery-main">
+                        <div class="about-gallery-row">
+                            <img src="https://i.ibb.co/qFyptPGs/01-techo.jpg" alt="Operario instalando techo metálico rojo">
+                            <img src="https://i.ibb.co/3Y1ffd1R/02-sobraestacionamiento.jpg" alt="Estructura metálica para estacionamiento">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section with Tabs -->
+        <section id="servicios" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Líneas de Negocio</h2>
+                <p class="section-subtitle">Soluciones especializadas adaptadas a los requerimientos técnicos de cada industria.</p>
+                
+                <!-- Tabs de servicios con auto-rotación cada 4 seg -->
+                <div class="services-container" id="servicesCarousel">
+                    <div class="services-tabs">
+                        <button class="tab-btn active" data-target="naves">Naves Industriales</button>
+                        <button class="tab-btn" data-target="cerchas">Cerchas Metálicas</button>
+                        <button class="tab-btn" data-target="carpinteria">Carpintería Metálica</button>
+                        <button class="tab-btn" data-target="estructuras">Estructuras Metálicas</button>
+                        <button class="tab-btn" data-target="techos">Techos y Obras Civiles</button>
+                    </div>
+
+                    <div class="services-content">
+                        <!-- Barra de progreso de auto-rotación -->
+                        <div class="tab-progress"><div class="tab-progress-bar" id="tabProgressBar"></div></div>
+
+                        <div id="naves" class="tab-content active">
+                            <div class="service-card service-card-split">
+                                <div class="service-card-text">
+                                    <h3>Construcción de Naves Industriales</h3>
+                                    <p>Diseño, fabricación y montaje de naves industriales de grandes luces. Empleamos acero estructural de alta resistencia para garantizar la durabilidad y optimización de espacios en almacenes, plantas de producción y centros logísticos.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check-circle"></i> Ingeniería de detalle y memorias de cálculo</li>
+                                        <li><i class="fas fa-check-circle"></i> Fabricación en taller propio bajo estrictos controles</li>
+                                        <li><i class="fas fa-check-circle"></i> Montaje seguro, eficiente y normado</li>
+                                    </ul>
+                                </div>
+                                <div class="service-card-img">
+                                    <img src="https://i.ibb.co/9mWRRxBB/03-techo.jpg" alt="Techado nave industrial">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="cerchas" class="tab-content">
+                            <div class="service-card service-card-split">
+                                <div class="service-card-text">
+                                    <h3>Fabricación de Cerchas Metálicas</h3>
+                                    <p>Elaboración de reticulados y cerchas metálicas para cubiertas de naves, coliseos y centros comerciales. Diseñadas para soportar cargas óptimas manteniendo una estructura ligera y de alto rendimiento.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check-circle"></i> Cálculo estructural y memorias técnicas</li>
+                                        <li><i class="fas fa-check-circle"></i> Acero de alta resistencia con pintura anticorrosiva</li>
+                                        <li><i class="fas fa-check-circle"></i> Instalación con personal certificado en altura</li>
+                                    </ul>
+                                </div>
+                                <div class="service-card-img">
+                                    <!-- object-position: top para mostrar al operario en la parte superior -->
+                                    <img src="https://i.ibb.co/qFyptPGs/01-techo.jpg" alt="Operario instalando cercha metálica" style="object-position: top;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="carpinteria" class="tab-content">
+                            <div class="service-card service-card-split">
+                                <div class="service-card-text">
+                                    <h3>Carpintería Metálica</h3>
+                                    <p>Fabricación a medida de portones industriales, estructuras de cobertura para estacionamientos, barandas de seguridad, cercos perimétricos y escaleras metálicas, cumpliendo con las normativas técnicas y de seguridad vigentes.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check-circle"></i> Diseño e ingeniería a medida del cliente</li>
+                                        <li><i class="fas fa-check-circle"></i> Fabricación en taller propio y trabajo en sitio</li>
+                                        <li><i class="fas fa-check-circle"></i> Cumplimiento de normas de seguridad en obra</li>
+                                    </ul>
+                                </div>
+                                <div class="service-card-img">
+                                    <img src="https://i.ibb.co/3Y1ffd1R/02-sobraestacionamiento.jpg" alt="Estructura metálica para cobertura de estacionamiento">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="estructuras" class="tab-content">
+                            <div class="service-card">
+                                <h3>Estructuras Metálicas (Plataformas y Mezzanines)</h3>
+                                <p>Diseño y construcción de plataformas elevadas, mezzanines industriales y soportes para maquinaria pesada. Soluciones que maximizan el aprovechamiento vertical del espacio en instalaciones industriales y comerciales.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Mezzanines de acero con cálculo estructural</li>
+                                    <li><i class="fas fa-check-circle"></i> Escaleras y pasarelas con barandas reglamentarias</li>
+                                    <li><i class="fas fa-check-circle"></i> Soportes y bases para equipos industriales pesados</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="techos" class="tab-content">
+                            <div class="service-card">
+                                <h3>Techos, Cubiertas y Obras Civiles</h3>
+                                <p>Instalación de coberturas metálicas (TR4, aluzinc), paneles termoacústicos y policarbonato. Ejecutamos también las obras civiles complementarias (cimentaciones, losas, pisos industriales) para entregar proyectos llave en mano.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check-circle"></i> Coberturas TR4, aluzinc y paneles termoacústicos</li>
+                                    <li><i class="fas fa-check-circle"></i> Cimentaciones y losas de concreto</li>
+                                    <li><i class="fas fa-check-circle"></i> Proyectos integrales llave en mano</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="proyectos" class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Nuestra experiencia reflejada en cada estructura que construimos.</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://i.ibb.co/9mWRRxBB/03-techo.jpg" alt="Nave Industrial Chancay - Cobertura metálica azul">
+                        <div class="project-info">
+                            <span class="project-tag">Lima / Chancay</span>
+                            <h4>Nave Industrial — Chancay</h4>
+                            <p>Estructura principal y cerramientos. Cobertura metálica con trabajos en altura ejecutados bajo estrictas normas de seguridad.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <!-- object-position: top para mostrar al operario en la parte superior de la foto -->
+                        <img src="https://i.ibb.co/qFyptPGs/01-techo.jpg" alt="Cobertura metálica con tijerales de acero" style="object-position: top;">
+                        <div class="project-info">
+                            <span class="project-tag">Techos y Cerchas</span>
+                            <h4>Cobertura Metálica con Cerchas</h4>
+                            <p>Fabricación y montaje de tijerales de acero con plancha acanalada. Ejecución impecable con uso de EPP completo y personal certificado.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://i.ibb.co/3Y1ffd1R/02-sobraestacionamiento.jpg" alt="Estructura metálica para estacionamiento con cobertura aluzinc">
+                        <div class="project-info">
+                            <span class="project-tag">Carpintería Metálica</span>
+                            <h4>Cobertura para Estacionamiento</h4>
+                            <p>Diseño e instalación de pórticos en tubos rectangulares de acero con cobertura de aluzinc, combinando estética y resistencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Hablemos de su Próximo Proyecto</h2>
+                <p class="section-subtitle">Nuestro equipo de ingenieros está listo para asesorarlo y brindarle una propuesta técnica y comercial a su medida.</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h3>Solicitar Cotización</h3>
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Empresa / RUC</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono / WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Descripción técnica del proyecto</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar Solicitud</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="info-block">
+                            <h3>Nuestras Sedes</h3>
+                            
+                            <div class="location-card">
+                                <h4><i class="fas fa-map-marker-alt"></i> Sede Lima Provincias (Chancay)</h4>
+                                <p>Quepepampa, Chancay</p>
+                                <div class="map-container map-primary">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15655.452601785535!2d-77.248377!3d-11.527922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDMxJzQwLjUiUyA3N8KwMTQnNTQuMiJX!5e0!3m2!1ses!2spe!4v1614000000000!5m2!1ses!2spe" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="location-card mt-4">
+                                <h4><i class="fas fa-map-marker-alt"></i> Sede Ancash (Huari)</h4>
+                                <p>Jirón Coronel Leoncio Prado Gutiérrez Mz.C - Lt.1, Huari 02303</p>
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.567086884849!2d-77.168483!3d-9.342440!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMjAnMzIuOCJTIDc3wrAxMCcwNi41Ilc!5e0!3m2!1ses!2spe!4v1614000000000!5m2!1ses!2spe" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-block mt-4">
+                            <h3>Contacto Directo</h3>
+                            <ul class="direct-contact-list">
+                                <li><i class="fas fa-phone-alt"></i> <a href="tel:+51961003446">+51 961 003 446</a></li>
+                                <li><i class="fas fa-envelope"></i> <a href="mailto:hatumkillacontratistas@gmail.com">hatumkillacontratistas@gmail.com</a></li>
+                            </ul>
+                            <div class="social-links mt-3">
+                                <a href="https://www.linkedin.com/company/hatumkilla" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Franja de Compromiso de Calidad -->
+        <section class="quality-strip">
+            <div class="container">
+                <h2 class="section-title quality-strip-title">Nuestro Compromiso</h2>
+                <div class="quality-strip-grid">
+                    <div class="quality-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <h4>Seguridad en Obra</h4>
+                        <p>El 100% de nuestros trabajos en altura se ejecutan con EPP completo, arneses certificados y procedimientos de trabajo seguro (PETS).</p>
+                    </div>
+                    <div class="quality-item">
+                        <i class="fas fa-compass-drafting"></i>
+                        <h4>Precisión Ingenieril</h4>
+                        <p>Cada proyecto está respaldado por memorias de cálculo estructural y planos de detalle, asegurando la integridad de la obra.</p>
+                    </div>
+                    <div class="quality-item">
+                        <i class="fas fa-circle-check"></i>
+                        <h4>Calidad Garantizada</h4>
+                        <p>Materiales homologados y procesos constructivos alineados con las mejores prácticas de la ingeniería peruana.</p>
+                    </div>
+                    <div class="quality-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Cumplimiento de Plazos</h4>
+                        <p>Gestión eficiente para entregas oportunas, manteniendo comunicación técnica constante durante toda la ejecución.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>HATUM KILLA CONTRATISTAS GENERALES E.I.R.L.</h3>
+                <p><strong>RUC:</strong> 20610013415</p>
+                <p><i class="fas fa-check-circle"></i> Proveedor Formal | Facturador Electrónico</p>
+            </div>
+            <div class="footer-locations">
+                <h4>Sedes Fiscales</h4>
+                <p>Lima: Quepepampa, Chancay</p>
+                <p>Ancash: Jr. Leoncio Prado, Huari</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Hatum Killa Contratistas. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/51961003446?text=Hola%20Hatum%20Killa%2C%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20estructuras%20met%C3%A1licas." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
